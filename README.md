@@ -22,7 +22,6 @@ This project demonstrates how to orchestrate a dbt (Data Build Tool) pipeline us
     │ └── profiles.yml # (ignored by git)
     ├── logs/ # Airflow logs (ignored by git)
     ├── plugins/ # Custom Airflow plugins (optional)
-    ├── .env # Snowflake credentials (ignored by git)
     ├── .gitignore
     └── docker-compose.yml
 
