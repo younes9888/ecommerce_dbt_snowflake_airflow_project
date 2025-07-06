@@ -1,0 +1,13 @@
+ecommerce_project:
+  outputs:
+    dev:
+      type: snowflake
+      account: hzfhkny-nu58046  # Retirez "https://" et ".snowflakecomputing.com"
+      user: YOUNES88
+      password: Ziat9888@@@@@@  # Vérifiez que le mot de passe est valide
+      role: ACCOUNTADMIN        # À remplacer par un rôle moins permissif si possible
+      warehouse: COMPUTE_WH
+      database: E_COMMERCE_DB
+      schema: RAW
+      threads: 4                # Augmentez ce nombre pour optimiser les performances
+  target: dev

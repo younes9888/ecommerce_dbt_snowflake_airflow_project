@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw_data
+    database: E_COMMERCE_DB
+    schema: RAW
+    tables:
+      - name: E_COMMERCE_TBL
+        description: "Table content ecommerce raw data"

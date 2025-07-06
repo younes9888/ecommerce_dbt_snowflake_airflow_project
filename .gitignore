@@ -1,0 +1,7 @@
+# .gitignore
+
+logs/
+__pycache__/
+*.pyc
+.env
+dbt/profiles.yml

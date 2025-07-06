@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: mrt_dim_product
+    description: "Product dimension table"
+    columns:
+      - name: product_key
+        description: "Product primary key"
+        tests:
+          - not_null
+          - unique
+
+      - name: product_code
+        description: "Code product"
+        tests:
+          - not_null
+
+      - name: product_description
+        description: "Product Description"

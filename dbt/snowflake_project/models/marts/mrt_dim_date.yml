@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: mrt_dim_date
+    description: "Date dimension table"
+    columns:
+      - name: invoice_date_key
+        description: "Date key"
+        tests:
+          - not_null
+          - unique
+
+      - name: invoice_date
+        description: "Order date"
+        tests:
+          - not_null

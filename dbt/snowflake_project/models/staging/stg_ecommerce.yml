@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: stg_ecommerce
+    description: "Table de staging pour les commandes"
+    columns:
+      - name: invoice_id
+        description: "unique ID for the order"
+        tests:
+          - unique
+
+      - name: quantity
+        description: "product ordered quantity"
+        tests:
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 0
+
+      - name: unit_price
+        description: "product unit price"
+        tests:
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 0

@@ -1,0 +1,42 @@
+version: 2
+
+models:
+  - name: mrt_fct_ecommerce
+    description: "Ecommerce sales fact table"
+    columns:
+      - name: invoice_id
+        description: "Order unique ID"
+        tests:
+          - not_null
+          - unique
+
+      - name: product_key
+        description: "foreign key to product dimension table"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('mrt_dim_product')
+              field: product_key
+
+      - name: invoice_date_key
+        description: "foreign key to date dimension table"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('mrt_dim_date')
+              field: invoice_date_key
+
+      - name: customer_id
+        description: "Customer id"
+        tests:
+          - not_null
+
+      - name: quantity
+        description: "Quantity ordered"
+        tests:
+          - not_null
+
+      - name: total_price
+        description: "Total order price"
+        tests:
+          - not_null
