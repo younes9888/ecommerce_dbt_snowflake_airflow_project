@@ -1,4 +1,4 @@
-# Airflow + dbt + Snowflake Project
+# Airflow + dbt + Snowflake Project (E_commerce Data)
 
 # Overview
 This project demonstrates how to orchestrate a dbt (Data Build Tool) pipeline using Apache Airflow, with Snowflake as the data warehouse. It is fully containerized using Docker and Docker Compose, and tested on Windows.
