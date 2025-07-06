@@ -15,14 +15,15 @@ This project demonstrates how to orchestrate a dbt (Data Build Tool) pipeline us
 
     project-root/
     ├── dags/ # Airflow DAGs
-    ├── dbt/ # Your dbt project
+    ├── dbt/ # dbt project
     │ ├── Dockerfile # Custom Docker image for dbt-snowflake
     │ ├── dbt_project.yml
-    │ ├── snowflake_project/
+    │ ├── snowflake_project/(dbt files)
     │ └── profiles.yml # (ignored by git)
     ├── logs/ # Airflow logs (ignored by git)
     ├── plugins/ # Custom Airflow plugins (optional)
     ├── .gitignore
+    ├── Dockerfile
     └── docker-compose.yml
 
 # Setup & Installation
